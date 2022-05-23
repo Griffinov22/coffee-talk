@@ -28,9 +28,24 @@ body {
   letter-spacing: 0.1em;
   font-style: italic;
   text-decoration: underline;
-  text-shadow: 8px 2px 1px rgba(255, 166, 93, 0.3);
+  text-shadow: 8px 7px 1px rgba(255, 166, 93, 0.3);
   color: $primary;
   font-size: 4rem;
+}
+
+#intro-para {
+  margin: 4% auto;
+  p {
+    width: 60%;
+    margin: auto;
+    font-family: $font;
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgb(255, 145, 0);
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    line-height: 2.5rem;
+  }
 }
 
 main {
