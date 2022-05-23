@@ -34,10 +34,9 @@ body {
 }
 
 #intro-para {
-  margin: 4% auto;
   p {
     width: 60%;
-    margin: auto;
+    margin: 4% auto;
     font-family: $font;
     font-size: 1.4rem;
     text-align: center;
@@ -45,11 +44,11 @@ body {
     font-weight: 900;
     letter-spacing: 0.05em;
     line-height: 2.5rem;
+    padding: 0;
   }
 }
 
 main {
-  margin-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,6 +79,10 @@ main {
   background-color: rgb(255, 255, 93);
 }
 
+#espresso {
+  margin-top: 0;
+}
+
 .info {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -91,6 +94,13 @@ main {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   line-height: 2rem;
+
+  img {
+    display: block;
+    margin: auto;
+    width: 96px;
+    position: relative;
+  }
 }
 
 .hidden {
