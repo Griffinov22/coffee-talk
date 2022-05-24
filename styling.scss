@@ -98,9 +98,49 @@ main {
   img {
     display: block;
     margin: auto;
-    width: 96px;
+    width: 150px;
     position: relative;
   }
+
+  .click-text {
+    font-size: 1rem;
+    color: grey;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  .special-text {
+    font-family: $font;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    color: grey;
+    letter-spacing: 0.05em;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 0.01px;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 150px;
+    margin: auto;
+  }
+}
+
+// for .pics!
+.open-right {
+  transform: translate3d(500px, -100px, 0px);
+  transition: transform 2s ease-in-out;
+}
+.open-left {
+  transform: translate3d(-500px, -100px, 0px);
+  transition: transform 2s ease-in-out;
+}
+.close-rightOrLeft {
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 2s ease-in-out;
 }
 
 .hidden {
