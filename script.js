@@ -37,6 +37,7 @@ for (let i = 0; i < picList.length; i++) {
       this.classList.add(`open-${i % 2 === 0 ? "right" : "left"}`);
       setTimeout(function () {
         picList[i].firstElementChild.classList.toggle("hidden");
+        picList[i].firstElementChild.classList.toggle("word-typer");
       }, 1900);
     } else {
       openClosedList[i] = 0;
@@ -44,6 +45,7 @@ for (let i = 0; i < picList.length; i++) {
       this.classList.add("close-rightOrLeft");
       setTimeout(function () {
         picList[i].firstElementChild.classList.toggle("hidden");
+        picList[i].firstElementChild.classList.toggle("word-typer");
       }, 1900);
     }
   });

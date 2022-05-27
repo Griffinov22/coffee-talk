@@ -19,6 +19,8 @@ body {
   font-weight: 600;
   letter-spacing: 0.2rem;
   margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #title {
@@ -31,6 +33,55 @@ body {
   text-shadow: 8px 7px 1px rgba(255, 166, 93, 0.3);
   color: $primary;
   font-size: 4rem;
+
+  .title-image {
+    display: inline-block;
+    width: 100px;
+    height: 95px;
+    margin: 0 100px;
+  }
+  .left-coffee {
+    animation: bounce-left 4s ease-in-out;
+  }
+  .right-coffee {
+    animation: bounce-right 4s ease-in-out;
+  }
+}
+
+@keyframes bounce-left {
+  0% {
+    transform: translate(0px);
+  }
+  20% {
+    transform: translate(-300px);
+  }
+  40% {
+    transform: translate(0px);
+  }
+  60% {
+    transform: translate(-100px) scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px) scale(1) rotate(-360deg);
+  }
+}
+
+@keyframes bounce-right {
+  0% {
+    transform: translate(0px);
+  }
+  20% {
+    transform: translate(300px);
+  }
+  40% {
+    transform: translate(0px);
+  }
+  60% {
+    transform: translate(100px) scale(1.2) rotate(0deg);
+  }
+  100% {
+    transform: translate(0px) scale(1) rotate(360deg);
+  }
 }
 
 #intro-para {
@@ -77,6 +128,7 @@ main {
 
 .box:hover {
   background-color: rgb(255, 255, 93);
+  transform: scale(1.02);
 }
 
 #espresso {
@@ -145,4 +197,15 @@ main {
 
 .hidden {
   display: none;
+}
+
+.word-typer {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: word 2s steps(60, end);
+}
+@keyframes word {
+  from {
+    width: 0;
+  }
 }
